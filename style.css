@@ -1,0 +1,161 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 1100px;
+    /* membuat wrapper berada dibagian tengah */
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: bold;
+    /* float = letak */
+    float: left;
+    font-family: courier;
+    /* referensi warna populer di "colorhunt.co" */
+    color: #0d2541;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    /* flex = agar bisa membuat seperti kolom-kolom */
+    display: flex;
+    /* agar bagian atas dan bawah bisa rata (seimbang) */
+    line-height: 80px;
+    /* agar menu tetap ada diatas tidak hilang ketika di scroll */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #d60544;
+    /* agar menu tetap diatas */
+    z-index: 1;
+    /* memberi garis pada menu diatas */
+    border-bottom:1px solid #364f6b;
+}
+
+/* menghilangkan bullets pada menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* memindahkan menu diatas dan horizontal */
+nav ul li {
+    float: left;
+}
+
+/* mengatur jarak, styling, dan posisi menu */
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    /* 0px = posisi dr atas dan bawah, 16px = jarak dr sebelah kanan dan kiri */
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+/* memberikan tanda underline ketika cursor diarahkan pada menu */
+/* hover = memberikan style yg diinginkan ketika cursor berada pada tombol/text */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'comic sans ms';
+}
+.kartu {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 70px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.03);
+    transition: all .3s;
+    background-color: #364f6b;
+    border: solid 8px #6ca2df;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    font-family: 'comic sans';
+} 
+
+  .kartu:hover {
+    background-color: #cc0b0b;
+    border: solid 8px #364f6b;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+  .foto {
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+  tbody {
+    font-size: 20px;
+    font-weight: 300;
+    color:white;
+}
+
+.biodata {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: auto;
+}
+
+#contact {
+    background: #dedede;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
